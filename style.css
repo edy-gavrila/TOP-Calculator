@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.eot");
+  src: url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/e2b9630cd56b1778e841e805b47c9347.svg#Digital")
+      format("svg");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  background-color: steelblue;
+}
+
+.container {
+  height: 480px;
+  width: 330px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.display {
+  color: yellow;
+  text-align: end;
+  font-family: digital;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 5px;
+}
+
+.big {
+  height: 50px;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.small {
+  font-size: 1.5rem;
+  height: 30px;
+}
+
+.btn-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  margin: 1px;
+  border: none;
+  color: white;
+  background-color: rgb(77, 77, 77);
+}
+
+.btn:hover {
+  color: black;
+  border: solid 1px white;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(172, 57, 57);
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#equals {
+  grid-row-start: span 2;
+  background-color: rgb(0, 68, 102);
+}
